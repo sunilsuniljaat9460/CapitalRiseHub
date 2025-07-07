@@ -68,7 +68,10 @@
   <!-- Navigation -->
   <nav id="navbar" class="bg-white shadow py-4 px-6 sticky top-0 z-30 transition duration-300">
     <div class="flex justify-between items-center">
-      <a href="index.html" class="text-xl font-bold text-blue-700" aria-label="Go to Home Page">CapitalRiseHub</a>
+      <a href="index.html" class="text-xl font-bold text-blue-700 flex items-center gap-2" aria-label="Go to Home Page">
+        <img src="assets/logo.png" alt="CapitalRiseHub Logo" class="h-8 w-8 rounded-full" loading="lazy"/>
+        CapitalRiseHub
+      </a>
       <button id="menu-toggle" class="md:hidden text-blue-700 text-2xl focus:outline-none" aria-label="Toggle menu" aria-expanded="false">☰</button>
     </div>
     <ul id="menu" class="mt-4 md:mt-0 hidden md:flex md:flex-row flex-col space-y-3 md:space-y-0 md:space-x-5 text-sm text-gray-700">
@@ -85,17 +88,19 @@
 
   <main id="main-content">
     <!-- Hero Section -->
-    <section class="bg-blue-100 py-20 text-center mt-16" data-aos="fade-up">
-      <h1 class="text-5xl font-extrabold text-blue-900 tracking-tight">Welcome to <span class="text-blue-700">CapitalRiseHub</span></h1>
-      <p class="text-xl mt-4 text-gray-800 max-w-2xl mx-auto">Smart Finance Tips in Hindi for Every Indian – Paisa samajhne ka simple way!</p>
-      <a href="#subscribe" class="mt-6 inline-block bg-blue-700 text-white px-6 py-3 rounded-md shadow hover:bg-blue-800 hover:scale-105 transition transform">Start Learning Now</a>
+    <section class="bg-blue-100 py-24 text-center mt-16" data-aos="fade-up" style="background-image: url('assets/hero-bg.jpg'); background-size: cover; background-position: center;">
+      <div class="bg-white bg-opacity-80 py-10 px-6 rounded-xl inline-block">
+        <h1 class="text-5xl font-extrabold text-blue-900 tracking-tight leading-snug">Welcome to <span class="text-blue-700">CapitalRiseHub</span></h1>
+        <p class="text-xl mt-4 text-gray-800 max-w-2xl mx-auto">Smart Finance Tips in Hindi for Every Indian – Paisa samajhne ka simple way!</p>
+        <a href="#subscribe" class="mt-6 inline-block bg-blue-700 text-white px-6 py-3 rounded-md shadow hover:bg-blue-800 hover:scale-105 transition transform">Start Learning Now</a>
+      </div>
     </section>
 
     <!-- About Section -->
     <section class="px-6 py-14 max-w-4xl mx-auto" data-aos="fade-up">
-      <h2 class="text-3xl font-bold text-gray-900 mb-4">💡 Blog ke baare mein</h2>
+      <h2 class="text-4xl font-bold text-gray-900 mb-6">💡 Blog ke baare mein</h2>
       <p class="text-gray-700 text-lg leading-relaxed">Hello! 🙏 Main <strong>Sunil Choudhary</strong> hoon, aur yeh blog banaya hai un logon ke liye jo finance basics ko easy language me samajhna chahte hain.</p>
-      <ul class="list-disc pl-6 mt-4 space-y-2 text-gray-700">
+      <ul class="list-disc pl-6 mt-4 space-y-3 text-gray-700 text-base">
         <li>SIP aur Mutual Funds kya hota hai aur kaise start karein</li>
         <li>Stock Market basics in simple language</li>
         <li>Budget banana aur smart saving tips</li>
@@ -106,7 +111,7 @@
 
     <!-- Subscribe Section -->
     <section id="subscribe" class="bg-white py-14 text-center" data-aos="fade-up">
-      <h2 class="text-2xl font-bold text-gray-900">📬 Free Finance Guide ke liye Subscribe karein</h2>
+      <h2 class="text-3xl font-bold text-gray-900">📬 Free Finance Guide ke liye Subscribe karein</h2>
       <p class="text-gray-700 mt-2">Apna email daalein aur paayein best money tips directly inbox me.</p>
       <form id="subscribe-form" class="mt-6 flex justify-center flex-wrap gap-2" aria-label="Subscribe to newsletter">
         <input type="email" placeholder="Enter your email" aria-label="Email address" name="email" class="p-3 border rounded-md w-64 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-shadow" />
@@ -119,8 +124,9 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
-    &copy; 2025 CapitalRiseHub | Designed by Sunil Choudhary | All rights reserved.
+  <footer class="bg-blue-900 text-white py-8 px-4 text-center text-sm">
+    <p class="mb-2">&copy; 2025 CapitalRiseHub | Designed by Sunil Choudhary | All rights reserved.</p>
+    <p class="text-xs">CapitalRiseHub ek personal finance blog hai jahan hum aapko detein hain practical aur simple tips paisa samajhne aur badhane ke liye.</p>
   </footer>
 
   <!-- Scripts -->
