@@ -176,3 +176,113 @@ footer {
     width: 100%;
   }
 }
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d0d0d;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styling */
+header {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Menu Button Styling */
+.menu-btn {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.4);
+}
+
+.menu-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #00ffc3;
+}
+
+.menu-btn span,
+.menu-btn::before,
+.menu-btn::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.menu-btn::before {
+  transform: translateY(-10px);
+}
+
+.menu-btn::after {
+  transform: translateY(10px);
+}
+
+.menu-btn.open span {
+  background: transparent;
+}
+
+.menu-btn.open::before {
+  transform: rotate(45deg);
+}
+
+.menu-btn.open::after {
+  transform: rotate(-45deg);
+}
+
+/* Nav Menu Styling */
+nav#main-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #111;
+  padding: 20px;
+  display: none;
+}
+
+nav#main-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+nav#main-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+nav#main-menu ul li a:hover {
+  color: #00ffc3;
+}
+
+/* Show Menu on Click */
+nav#main-menu.show {
+  display: block;
+}
